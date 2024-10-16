@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Tienda de Muebles y Melamina {% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Bienvenido a nuestra Tienda de Muebles de Madera y Melamina</h1>
+    <p>Explora nuestra selección de muebles artesanales que combinan estilo y tecnologia.</p>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_1.jpg') }}" class="card-img-top" alt="Mueble 1">
+            <div class="card-body">
+                <h5 class="card-title">Mesa de Madera</h5>
+                <p class="card-text">Mesa de comedor de madera maciza, ideal para cenas familiares.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Ver Más</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_2.jpg') }}" class="card-img-top" alt="Mueble 2">
+            <div class="card-body">
+                <h5 class="card-title">Estante de Madera</h5>
+                <p class="card-text">Estantería de madera con estilo rustico para tus gustos</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Ver Más</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_3.jpg') }}" class="card-img-top" alt="Mueble 3">
+            <div class="card-body">
+                <h5 class="card-title">Mueble de Melamina</h5>
+                <p class="card-text">Mueble de melamina para tu sala con luces y sensores integrados.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Ver Más</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_9.jpg') }}" class="card-img-top" alt="Mueble 1">
+            <div class="card-body">
+                <h5 class="card-title">Diviones para Esquineros</h5>
+                <p class="card-text">Divisiones de melamina para aprobechar cada espacio de tu casa.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Ver Más</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_5.jpg') }}" class="card-img-top" alt="Mueble 1">
+            <div class="card-body">
+                <h5 class="card-title">Mueble de Madera y Melamina</h5>
+                <p class="card-text">Unimos los mejor de nuetras habilidades para entregarte tu sueño hecho realidad.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Ver Más</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_6.jpg') }}" class="card-img-top" alt="Mueble 1">
+            <div class="card-body">
+                <h5 class="card-title">Porta cuchillos rustico</h5>
+                <p class="card-text">Exelente para una variedad de utensillios de tu cocina.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Ver Más</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="text-center mt-5">¿Por qué elegir nuestros muebles?</h2>
+<div class="row mt-4">
+    <div class="col-md-4 text-center">
+        <div class="icon">
+            <i class="fas fa-check-circle fa-3x"></i>
+        </div>
+        <h4>Calidad Artesanal</h4>
+        <p>Muebles hechos a mano con materiales de alta calidad.</p>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="icon">
+            <i class="fas fa-leaf fa-3x"></i>
+        </div>
+        <h4>Sostenibilidad</h4>
+        <p>Usamos madera de fuentes sostenibles para cuidar el medio ambiente.</p>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="icon">
+            <i class="fas fa-user-friends fa-3x"></i>
+        </div>
+        <h4>Atención Personalizada</h4>
+        <p>Estamos aquí para ayudarte a elegir el mueble perfecto para tu hogar.</p>
+    </div>
+</div>
+{% endblock %}

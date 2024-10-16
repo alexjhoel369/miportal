@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Noticias - Tienda de Muebles{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Últimas Noticias</h1>
+    <p>Entérate de las novedades y lanzamientos de nuestra tienda.</p>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_18.jpeg') }}" class="card-img-top" alt="Noticia 1">
+            <div class="card-body">
+                <h5 class="card-title">Lanzamiento de Nueva Línea</h5>
+                <p class="card-text">Estamos emocionados de presentar nuestra nueva línea de muebles ecológicos.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Leer Más</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_20.jpeg') }}" class="card-img-top" alt="Noticia 2">
+            <div class="card-body">
+                <h5 class="card-title">Taller de Diseño</h5>
+                <p class="card-text">Únete a nuestro próximo taller de diseño de muebles.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Leer Más</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/limpia_1.jpg') }}" class="card-img-top" alt="Noticia 3">
+            <div class="card-body">
+                <h5 class="card-title">Consejos de Cuidado</h5>
+                <p class="card-text">Aprende cómo cuidar y mantener tus muebles de madera.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Leer Más</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

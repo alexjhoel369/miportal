@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Quiénes Somos - Melamina y Carpinteria {% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Quiénes Somos</h1>
+    <p>Somos una familia dedicada a la fabricación de muebles de madera y melamina de alta calidad.</p>
+</div>
+
+<h2 class="mt-5">Nuestra Historia</h2>
+<p>Desde nuestros inicios, hemos estado comprometidos con la artesanía y el diseño de nuestros muebles<br>
+ Avanzamos y nos actualizamos con las nuevas tecnologias para dar a nuestros clientes muebles de calidad, tecnologia, y belleza sin dejar <br>
+atras el estilo rustico, solo nuestra limitante es la imaginacion de nuestros queridos clientes</p>
+<h2 class="mt-5">Misión y Visión</h2>
+<p><strong>Misión:</strong> Ofrecer muebles de madera y melamina de alta calidad que embellezcan los hogares de nuestros buenos clientes.</p>
+<p><strong>Visión:</strong> Ser reconocidos como líderes en la fabricación y diseño de muebles de alta calidad.</p>
+
+<h2 class="mt-5">Nuestro Equipo</h2>
+<div class="row mt-4 marketing">
+    <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/maestro_1.jpg') }}" alt="Miembro del equipo" class="img-fluid rounded-circle" style="width: 140px; height: 140px;">
+        <h2 class="fw-normal">Jose Luis Chura</h2>
+        <p>Maestro en muebles de Melamina</p>
+        <div>
+            <a href="https://www.facebook.com/joseluis.gonzaleschura/about">Facebook</a> | <a>65643531</a> 
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/maestro_2.jpg') }}" alt="Miembro del equipo" class="img-fluid rounded-circle" style="width: 140px; height: 140px;">
+        <h2 class="fw-normal">Bacilides Salcedo Acarapi</h2>
+        <p>Maestro en muebles de Madera</p>
+        <div>
+            <a href="https://www.facebook.com/bacilides.salcedo/about">Facebook</a>  | <a>67314985</a>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <img src="{{ url_for('static', filename='images/maestro_3.jpg') }}" alt="Miembro del equipo" class="img-fluid rounded-circle" style="width: 140px; height: 140px;">
+        <h2 class="fw-normal">Jhoel Alejandro Salcedo</h2>
+        <p>Electrónico en muebles de Madera y Melamina</p>
+        <div>
+            <a href="https://www.facebook.com/profile.php?id=100007824075980&sk=about">Facebook</a>  | <a>69783198</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

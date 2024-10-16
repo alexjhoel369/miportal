@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Servicios - Tienda de Muebles{% endblock %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1>Nuestros Servicios</h1>
+    <p>Ofrecemos una variedad de servicios para satisfacer tus necesidades de muebles.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_11.jpeg') }}" class="card-img-top" alt="Servicio 1">
+            <div class="card-body">
+                <h5 class="card-title">Diseño Personalizado</h5>
+                <p class="card-text">Creamos muebles a medida según tus especificaciones.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Leer Más</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_15.jpeg') }}" class="card-img-top" alt="Servicio 2">
+            <div class="card-body">
+                <h5 class="card-title">Restauración de Muebles</h5>
+                <p class="card-text">Damos nueva vida a tus muebles antiguos.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Leer Más</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/mueble_13.jpeg') }}" class="card-img-top" alt="Servicio 3">
+            <div class="card-body">
+                <h5 class="card-title">Asesoría en Decoración</h5>
+                <p class="card-text">Te ayudamos a elegir los muebles perfectos para tu hogar.</p>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Leer Más</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
